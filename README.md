@@ -1,2 +1,2 @@
-Dolphins Website
-[https://vlm-driver.github.io/](https://vlm-driver.github.io/)
+SafeVL Website
+[https://vlm-driver.github.io/](https://safevl.github.io/)
