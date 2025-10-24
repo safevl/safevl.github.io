@@ -2,22 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="VPD-LM: An end-to-end Vision-Language Model for Autonomous Driving using object-centric visual prompts and chain-of-thought reasoning for enhanced safety assessment, perception, and planning.">
-  <meta property="og:title" content="VPD-LM: Improving Driving Safety Assessment via Object-Level Visual Prompting in Vision-Language Models"/>
-  <meta property="og:description" content="VPD-LM addresses limitations in VLM-based autonomous driving by incorporating object-centric, video-based visual prompts and chain-of-thought reasoning to enhance safety, interpretability, and robustness."/>
+  <meta name="description" content="SafeVL: Driving Safety Evaluation via Meticulous Reasoning in Vision Language Models">
+  <meta property="og:title" content="SafeVL: Driving Safety Evaluation via Meticulous Reasoning in Vision Language Models"/>
+  <meta property="og:description" content="SafeVL: Driving Safety Evaluation via Meticulous Reasoning in Vision Language Models"/>
   <meta property="og:url" content="YOUR_WEBSITE_URL_HERE"/>
   <meta property="og:image" content="static/image/vpd_lm_banner.png"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-  <meta name="twitter:title" content="VPD-LM: Improving Driving Safety Assessment via Object-Level Visual Prompting in Vision-Language Models">
-  <meta name="twitter:description" content="VPD-LM addresses limitations in VLM-based autonomous driving by incorporating object-centric, video-based visual prompts and chain-of-thought reasoning to enhance safety, interpretability, and robustness.">
+  <meta name="twitter:title" content="SafeVL: Driving Safety Evaluation via Meticulous Reasoning in Vision Language Models">
+  <meta name="twitter:description" content="SafeVL: Driving Safety Evaluation via Meticulous Reasoning in Vision Language Models">
   <meta name="twitter:image" content="static/images/vpd_lm_twitter_banner.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="Autonomous Driving, Vision-Language Models, Safety Assessment, Visual Prompting, Risk Assessment, VPD-LM, NeurIPS">
+  <meta name="keywords" content=" Learning-based Safety, VLM, VLA, Physical AI Safety">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>VPD-LM: Driving Safety Assessment</title>
+  <title>SafeVL: Driving Safety Evaluation via Meticulous Reasoning in Vision Language Models</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -75,7 +75,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            VPD-LM: Improving Driving Safety Assessment via Object-Level Visual Prompting in Vision-Language Models
+            SafeVL: Driving Safety Evaluation via Meticulous Reasoning in Vision Language Models
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">Anonymous Author(s)</span>
@@ -104,10 +104,7 @@
         <h2 class="title is-3 has-text-centered">Abstract</h2>
         <hr class="section-divider">
         <p class="is-size-5">
-          Vision-Language Models (VLMs) have demonstrated remarkable visual reasoning capabilities, positioning them as promising solutions for a wide range of autonomous driving (AD) tasks. Unlike traditional expert-driven AD models, which often operate as opaque black boxes, VLMs generate natural language explanations for their decisions, offering inherent interpretability. This interpretability enables explicit reasoning about driving safety and facilitates the identification of rare or high-risk scenarios that conventional systems may overlook. However, existing VLM-based frameworks often struggle with grounding and tracking specific objects over time—a limitation that undermines robust decision-making in dynamic, real-world environments.
-          In this work, we introduce <em><b>VPD-LM</b></em>, an end-to-end Vision-Language Model for Autonomous Driving that addresses these challenges through object-centric, video-based visual prompts and chain-of-thought (CoT) reasoning. <em><b>VPD-LM</b></em> processes raw camera inputs and sensor metadata to generate interpretable natural language outputs for core driving tasks, including planning, perception, and safety assessment.
-          To rigorously evaluate safety reasoning, we go beyond standard nuScenes-based benchmarks by constructing a novel Driving Safety Benchmark. We extract approximately 3,000 long-tail scenarios with potential collision risks from the larger nuPlan dataset using our proposed Road Graph Occupancy Detection method. From these, 600 representative scenarios are manually labeled into three risk categories—low, medium, and high—creating a challenging and fine-grained testbed for risk-aware driving models.
-          Empirical results demonstrate that <em><b>VPD-LM</b></em> achieves strong performance in motion planning and threat assessment while generalizing effectively to complex and previously unseen scenarios. Our work highlights the potential of VLM-driven reasoning to significantly enhance safety, interpretability, and robustness in next-generation autonomous driving systems.
+          Ensuring safety remains a fundamental challenge in autonomous driving, with a key step being the development of a reliable **safety evaluator** capable of identifying unsafe (i.e., collision-prone) scenarios. Existing methods, however, either rely heavily on **object trajectories** or depend solely on **language-based reasoning**, overlooking essential **visual cues** that are critical for real-world safety assessment and limiting their ability to generalize to long-tail unsafe events. Meanwhile, **Vision–Language Models (VLMs)** have shown impressive generalizati
         </p>
       </div>
     </div>
