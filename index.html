@@ -102,11 +102,14 @@
     <div class="container is-max-desktop">
       <div class="content has-text-centered">
         <div class="video-wrapper" style="display: flex; justify-content: center;">
-          <div class="video-container" style="position: relative; width: 70%; padding-bottom: 28.125%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-            <iframe 
-              src="https://drive.google.com/file/d/1tY-RV7hQ-YhiZYStUrb1hJlHtJ_2fRj4/preview" 
-              frameborder="0" 
-              allow="autoplay; fullscreen" 
+          <div class="video-container"
+               style="position: relative; width: 70%; padding-bottom: 39.375%; height: 0;
+                      overflow: hidden; border-radius: 12px;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <iframe
+              src="https://drive.google.com/file/d/1tY-RV7hQ-YhiZYStUrb1hJlHtJ_2fRj4/preview"
+              frameborder="0"
+              allow="autoplay; fullscreen"
               allowfullscreen
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
             </iframe>
@@ -139,35 +142,30 @@
       <h2 class="title is-3 has-text-centered">Our Approach</h2>
       <hr class="section-divider">
 
-      <!-- Approach Block -->
-      <div class="item">
-        <div class="columns is-vcentered">
-          <!-- Figure -->
-          <div class="column is-one-third">
-            <img src="static/images/framework.jpg" alt="SafeVL Reasoning Pipeline"
-                 style="width:100%;border:1px solid #ccc;border-radius:8px;">
-          </div>
-
-          <!-- Text -->
-          <div class="column">
-            <p class="is-size-5">
-              <em><b>SafeVL</b></em> predicts whether a driving scene is Safe or Unsafe by performing structured,
-              interpretable reasoning over both real and counterfactual scenarios. We first generate
-              <b>counterfactual unsafe data</b> by altering agent meta-actions (e.g., lane change, acceleration)
-              on top of real driving scenes, exposing the model to rare but high-risk interactions. We then apply
-              an <b>object-centric visual reasoning pipeline</b> that processes each video through four steps:
-              (S1) scene understanding, (S2) crucial object detection, (S3) behavior prediction for ego and other agents,
-              and (S4) safety analysis. By aligning safe trajectories and their unsafe counterfactual variants under
-              the same reasoning structure, SafeVL learns to anticipate collision-prone behavior and output an
-              explicit Safe/Unsafe judgment.
-            </p>
-          </div>
-        </div>
+      <!-- Image on top, text below -->
+      <div class="item has-text-centered">
+        <img src="static/images/framework.jpg" alt="SafeVL Reasoning Pipeline"
+             style="max-width:80%;border:1px solid #ccc;border-radius:8px;margin-bottom:1.5rem;">
       </div>
 
+      <div class="content has-text-justified">
+        <p class="is-size-5">
+          <em><b>SafeVL</b></em> performs structured, interpretable reasoning over real and counterfactual driving
+          scenarios to evaluate safety in autonomous driving. The framework first employs a
+          <b>Road-Graph Counterfactual Data Generation Engine</b> that perturbs agent actions such as acceleration
+          and lane changes to synthesize diverse unsafe outcomes. This process expands the range of rare yet
+          critical collision-prone scenarios. Then, an <b>Object-centric Visual Reasoning Framework</b> processes
+          each driving video through four stages: (S1) scene understanding, (S2) key object detection, (S3) behavior
+          prediction for ego and surrounding agents, and (S4) safety analysis. By aligning safe trajectories with
+          their counterfactual unsafe variants under the same reasoning pipeline, SafeVL learns to identify and
+          explain high-risk events before collisions occur, producing transparent and reliable Safe/Unsafe decisions.
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
+
 
 
  
