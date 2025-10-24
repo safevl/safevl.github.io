@@ -139,24 +139,39 @@
       <h2 class="title is-3 has-text-centered">Our Approach</h2>
       <hr class="section-divider">
 
-      <!-- 1 -->
+      <!-- Approach Block -->
       <div class="item">
         <div class="columns is-vcentered">
+          <!-- Figure -->
           <div class="column is-one-third">
-            <img src="static/images/VPD-LM.png" alt="Visual Prompting"
-                 style="width:100%;border:1px solid #ccc;">
+            <img src="static/images/framework.jpg" alt="SafeVL Reasoning Pipeline"
+                 style="width:100%;border:1px solid #ccc;border-radius:8px;">
           </div>
+
+          <!-- Text -->
           <div class="column">
             <p class="is-size-5">
-              Detection models (e.g., DINO, YOLO-World) mark key road agents; SAM-2 tracks them across frames,
-              producing masks and IDs that become visual prompts guiding the VLM’s attention.
+              <em><b>SafeVL</b></em> predicts whether a driving scene is Safe or Unsafe by performing structured,
+              interpretable reasoning over both real and counterfactual scenarios. We first generate
+              <b>counterfactual unsafe data</b> by altering agent meta-actions (e.g., lane change, acceleration)
+              on top of real driving scenes, exposing the model to rare but high-risk interactions. We then apply
+              an <b>object-centric visual reasoning pipeline</b> that processes each video through four steps:
+              (S1) scene understanding, (S2) crucial object detection, (S3) behavior prediction for ego and other agents,
+              and (S4) safety analysis. By aligning safe trajectories and their unsafe counterfactual variants under
+              the same reasoning structure, SafeVL learns to anticipate collision-prone behavior and output an
+              explicit Safe/Unsafe judgment.
             </p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
+ 
+
 
 <!-- ───────── DEMONSTRATION & RESULTS ───────── -->
 
